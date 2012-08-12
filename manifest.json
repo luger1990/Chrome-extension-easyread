@@ -1,0 +1,24 @@
+{  
+  "name" : "easyread",
+  "version" : "1.0.1",
+ // "options_page": "options.html",
+  "description" : "方便用户浏览网页部分内容",
+  "permissions" : [
+    "contextMenus",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_scripts": [ {
+    "matches": [ "\u003Call_urls\u003E" ],
+    "js": [ "jquery-1.7.1.js","background.js" ],
+    "css": ["style.css"],
+    "run_at": "document_idle"
+   } ],
+  "icons" : {
+    "16" : "lu.ico",
+    "48" : "lu.ico",
+    "128" : "lu.ico"
+  },
+  "background_page": "background.html"
+ } 
