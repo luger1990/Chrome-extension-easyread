@@ -1,13 +1,14 @@
 {  
+  "manifest_version": 2,
   "name" : "easyread",
   "version" : "1.0.1",
- // "options_page": "options.html",
   "description" : "方便用户浏览网页部分内容",
   "permissions" : [
     "contextMenus",
     "tabs",
     "http://*/*",
-    "https://*/*"
+    "https://*/*",
+    "background"
   ],
   "content_scripts": [ {
     "matches": [ "\u003Call_urls\u003E" ],
@@ -20,5 +21,7 @@
     "48" : "lu.ico",
     "128" : "lu.ico"
   },
-  "background_page": "background.html"
+  "background": {
+    "scripts": ["background.js"]
+  }
  } 
