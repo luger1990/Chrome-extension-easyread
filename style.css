@@ -38,8 +38,6 @@
     background-color: #E4F2F5;
     /* support Safari, Chrome */
     -webkit-border-radius: 10px;
-    /* support firefox */
-    -moz-border-radius: 10px;
     border-radius: 10px;
 }
 
@@ -58,20 +56,14 @@
     font-weight:bold;
 }
 
-.content_read  {
+.content_read * {
     word-wrap: break-word !important;
-    font-size: 18px !important;
+    font-size: 18px;
     line-height: 180% !important;
     font-family: "Microsoft Yahei", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti !important;
-    color: #2A85E8 !important;
+    color: #2A85E8 ;
 }
-.content_read p{
-    margin: 5px 0 10px;
-    
-    color: #444;
-    
 
-}
 .content_read img {
     float: none;
     max-width: 100%;
